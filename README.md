@@ -1,7 +1,7 @@
 # Fifty Shades Text Generator
 Computer generated erotica in the style of Fifty Shades of Gray, for the discerning technophile.
 
-This is the code backing my website, [xwray.com/fiftyshades](xwray.com/fiftyshades).  It's a set of grammar and vocabulary rules written by hand.
+This is the code backing my website, [xwray.com/fiftyshades](http://xwray.com/fiftyshades).  It's a set of grammar and vocabulary rules written by hand.
 
 ##This is a Markov chain text generator, right?
 Nope. Markov chain generators produce text that "sounds" right but is meaningless (although sometimes the juxtapositions can seem poetic or profound). Most text generators on the web are Markov generators, and given the right conditions, it can work really well. [Here's an great explanation of how they work](http://blog.codinghorror.com/markov-and-you/). They're also really easy to make, because all you need is an algorithm (there are many open source ones online) and a corpus (the text you want to parody).  This, however, is not one.
