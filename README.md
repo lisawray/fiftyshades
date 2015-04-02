@@ -1,7 +1,21 @@
-# fiftyshades
+# Fifty Shades Text Generator
 Computer generated erotica in the style of Fifty Shades of Gray, for the discerning technophile.
 
 This is the code backing my website, [xwray.com/fiftyshades](xwray.com/fiftyshades).  It's a set of grammar and vocabulary rules written by hand.
+
+##This is a Markov chain text generator, right?
+Nope. Markov chain generators produce text that "sounds" right but is meaningless (although sometimes the juxtapositions can seem poetic or profound). Most text generators on the web are Markov generators, and given the right conditions, it can work really well. [Here's an great explanation of how they work](http://blog.codinghorror.com/markov-and-you/). They're also really easy to make, because all you need is an algorithm (there are many open source ones online) and a corpus (the text you want to parody).  This, however, is not one.
+
+##So how does this work?
+Imagine that you've read 50 Shades of Gray -- now you feel equipped to write your own parody. Not too hard, right?
+
+Now, try instructing your friend to write a parody scene, who has never read the book. 
+
+Now -- imagine giving instructions to write a parody to a friend who has never read *a* book.  
+
+The computer doesn't even know what English is. You write super-detailed instructions to tell it how to put together the sentences from words and phrases.
+
+Basically, it's a set of rules, fed through an "engine" that recursively evaluates them -- in fact, it's built on [recursive grammars](http://en.wikipedia.org/wiki/Recursive_grammar). While it's possible, as I do here, you do not have to make meaningful text this way. In fact, most examples of the genre don't (see the Postmodernism Generator). But my personal challenge -- and the source of humor of this particular project -- is in generating text so indistinguishable from the original material that it provokes cognitive dissonance at knowing it was computer generated.
 
 ## How to run the code
 This code is written in pb format and designed for use with the [Dada Engine](http://dev.null.org/dadaengine/) by Andrew C. Bulhak. Once you've downloaded the project, you run it on the command line with your script as an argument:
