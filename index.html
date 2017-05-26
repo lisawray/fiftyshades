@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Fifty Shades of Grey text generator | Parody erotic fiction generated algorithmically.</title>
+        <meta name="description" content="A text generator in the style of 50 Shades of Grey. This is a parody of the novel, created to show how simple but convincing scenes can be created algorithmically. The text is erotic (and may be NSFW) but not explicit.">
+<meta name="keywords" content="50 shades, Fifty Shades, 50 Shades of Grey, Fifty Shades of Grey, Fifty Shades of Grey text generator, lorem ipsum, text generator, text generation, natural language generation, open source">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">fifty shades text generator</h1>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                    <section>
+                        <h2>.</h2>
+                        <p id="text">
+                        <script>
+                        function getRandom(min, max) {
+                            return Math.floor(Math.random() * (max - min)) + min;
+                        }
+
+                        var query = window.location.search;
+                        if (!query) {
+                            query = "";
+                        }
+                        var matches = query.match('id=(\\d+)');
+                        
+                        if (matches && matches.length > 0) {
+                            window.id = matches[1];
+                        } else {
+                            window.id = getRandom(2000, 2499);
+                        }
+                        var client = new XMLHttpRequest();
+                        client.open('GET', 'gen/' + id + '.txt');
+                        client.onreadystatechange = function() {
+                            document.getElementById("text").innerHTML=client.responseText;
+                        }
+                        client.send();
+                        </script>
+						</p>
+						<h2>.</h2>
+                        
+                    </section>
+                    
+                    <footer>
+						<div class="refresh">
+                        <h3>Want more?  </h3>
+
+                        <p>Refresh or <a href="http://www.xwray.com/fiftyshades" >click here.</a></p>
+						</div>
+						<div class="links">
+							<h3>&nbsp;</h3>
+							<p>
+                            <script>
+                            var link = "<a href=\"http://www.xwray.com/fiftyshades?id=" + window.id + "\">permalink</a>";
+                            document.write(link);
+                            </script>
+                            </p>
+						</div>
+
+                    </footer>
+                </article>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                This text is not a quote.  It is completely computer generated as a parody of the novel 50 Shades of Grey. <a href="http://github.com/lisawray/fiftyshades">View the code on GitHub!</a> An experiment by <a href="https://twitter.com/lisawrayz">Lisa Wray</a>.
+            </footer>
+        </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-58706247-2','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
