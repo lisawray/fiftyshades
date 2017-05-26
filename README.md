@@ -4,7 +4,7 @@ Computer generated erotica in the style of Fifty Shades of Gray, for the discern
 This is the code backing my website, [xwray.com/fiftyshades](http://xwray.com/fiftyshades). It's generated from a lovingly crafted hand written grammar.
 
 ## This is a Markov chain text generator, right?
-This is the number one question I get, and NO, that would have been easier (but not as cool)! Markov chain generators produce text that "sounds" right but is meaningless (although sometimes the juxtapositions can seem poetic or profound). Most text generators on the web are Markov generators. That's probably because natural language processing is complex and writing a hand-tuned grammar is difficult and time-taking. Considering the gravity of my source material, though, nothing less would do.
+This is the number one question I get, and NO, that would have been easier (but not as cool)! Markov chain generators produce text that "sounds" right but is meaningless and often not grammatically sound (although sometimes the juxtapositions can seem poetic or profound). Most text generators on the web are Markov generators. That's probably because natural language processing is complex and writing a hand-tuned grammar is difficult and time-taking. But considering the gravity of my source material, nothing less would do.
 
 ## So how does this work?
 It's a set of vocabulary and assembly rules (a "grammar"), fed through an "engine" that recursively evaluates them. 
